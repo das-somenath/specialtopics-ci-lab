@@ -11,7 +11,8 @@ node {
     try {
     withMaven (maven: 'maven3') {
       sh "mvn package"
-        } finally {
+        }
+        }finally {
             junit 'build/reports/**/*.xml'
         }
 
