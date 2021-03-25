@@ -7,7 +7,7 @@ node {
 
   stage('Build') {
     // you should build this repo with a maven build step here
-    echo "hello"
+   // echo "hello"
     try {
     withMaven (maven: 'maven3') {
       sh "mvn package"
